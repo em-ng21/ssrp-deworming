@@ -1,5 +1,5 @@
  
- * Filename: Earnings_wealth_labor_occchoice_main_byage.do
+ * Filename: Consumption_earnings_KD.do
  * Figure: Figure 2
  * Description: The kernel densities of earnings, consumption, and 
  *		household earnings results

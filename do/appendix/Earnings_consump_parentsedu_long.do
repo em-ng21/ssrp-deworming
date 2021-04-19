@@ -1,5 +1,5 @@
 
- * Filename: Earnings_consump_parendsedu_long.do
+ * Filename: Earnings_consump_parentsedu_long.do
  * Table: Appendix Table S8
  * Description: This do file creates the table which shows the effect of 
  *		parents' average level of education on the main outcomes (consumption,
