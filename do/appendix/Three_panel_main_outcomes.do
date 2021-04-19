@@ -21,7 +21,7 @@ local panel_name_male "Panel C: Male"
 local num_columns : word count `outcomes' + 5
 
 ** initialize tex document
-texdoc init "$table/KLPS4_E+_pooled_outcomes_extended.tex", replace force
+texdoc init "table/KLPS4_E+_pooled_outcomes_extended.tex", replace force
 texdoc write \\ \toprule
 texdoc close
 
@@ -90,7 +90,7 @@ estimates drop _all
 * PANEL B: EARNINGS *
 *******************
 
-texdoc init "$table/KLPS4_E+_pooled_outcomes_extended.tex", append force
+texdoc init "table/KLPS4_E+_pooled_outcomes_extended.tex", append force
 texdoc write \midrule
 texdoc close
 
@@ -177,7 +177,7 @@ estimates drop _all
 * PANEL C: LABOR OCCCHOICE WEALTH*
 **********************************
 
-texdoc init "$table/KLPS4_E+_pooled_outcomes_extended.tex", append force
+texdoc init "table/KLPS4_E+_pooled_outcomes_extended.tex", append force
 texdoc write \midrule
 texdoc close
 
