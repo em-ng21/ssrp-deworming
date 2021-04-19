@@ -108,7 +108,7 @@ print_code <- TRUE
 ```{r model}
 
 ###########################
-#   CONSTUCTING MODEL     #
+#   CONSTRUCTING MODEL     #
 ###########################
 
 npv_mo_f <- function(interest_r_var = interest_in,
