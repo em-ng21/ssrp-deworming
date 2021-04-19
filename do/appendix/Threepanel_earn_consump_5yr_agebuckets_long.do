@@ -185,7 +185,7 @@ label variable age_30_34 "Indicator for Survey Age 30-34"
 
 //export table
 # delimit ;
-	esttab using "$table/KLPS4_E+_pooled_earnings_consumption_5yr_agebuckets_long.tex",  append
+	esttab using "table/KLPS4_E+_pooled_earnings_consumption_5yr_agebuckets_long.tex",  append
 		cells ("b(star fmt(%12.0f))"
 				"se(par fmt(%12.0f))")
 		order(treatXolder treatXage_15_19 treatXage_20_24 treatXage_25_29 treatXage_30_34 treatXage_35_39 costXolder costXage_15_19 costXage_20_24 costXage_25_29 costXage_30_34 costXage_35_39 satXolder satXage_15_19 satXage_20_24 satXage_25_29 satXage_30_34 satXage_35_39 older age_15_19 age_20_24 age_25_29 age_30_34)

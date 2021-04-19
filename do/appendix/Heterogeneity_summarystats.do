@@ -218,7 +218,7 @@ esttab, se mtitle noobs
 
 //Output Table
 # delimit ;
-esttab using "$output/KLPS4_E+_heterogeneity_summarystats.tex", append 
+esttab using "output/KLPS4_E+_heterogeneity_summarystats.tex", append 
 	order(age mod_heavy z_int parents_edu years_treat)
 	cells(b(star fmt(%12.3f) keep(mod_heavy z_int)) 
 	se(par fmt(%12.3f) keep(mod_heavy z_int)) 
@@ -453,7 +453,7 @@ esttab, se mtitle noobs
 
 //Output Table
 # delimit ;
-esttab using "$output/KLPS4_E+_heterogeneity_summarystats.tex", append 
+esttab using "output/KLPS4_E+_heterogeneity_summarystats.tex", append 
 	keep(mod_heavy_1999 mod_heavy_2001 health)
 	order(mod_heavy_1999 mod_heavy_2001 health)
 	cells(b(star fmt(%12.3f) keep(mod_heavy_1999 mod_heavy_2001)) 
@@ -485,7 +485,7 @@ texdoc close
 
 //Output Table
 # delimit ;
-esttab using "$output/KLPS4_E+_heterogeneity_summarystats.tex", append 
+esttab using "output/KLPS4_E+_heterogeneity_summarystats.tex", append 
 	keep(educyr any_secondary social_network urban chores childcare work_hrs)
 	order(educyr any_secondary social_network urban chores childcare work_hrs)
 	cells(b(star fmt(%12.2f) keep(educyr any_secondary social_network urban)) 

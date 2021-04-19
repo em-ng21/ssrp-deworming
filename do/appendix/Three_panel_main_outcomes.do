@@ -70,7 +70,7 @@ label variable saturation_dm "Saturation ($\lambda_3$)"
 
 *Exporting Panel A
 # delimit ;
-	esttab using "$table/KLPS4_E+_pooled_outcomes_extended.tex",  append
+	esttab using "table/KLPS4_E+_pooled_outcomes_extended.tex",  append
 		cells ("b(star fmt(%12.0f))"
 				"se(par fmt(%12.0f))")
 		nocons nolz nolines star(* .10 ** .05 *** .01)
@@ -155,7 +155,7 @@ label variable saturation_dm "Saturation ($\lambda_3$)"
 
 *Exporting Panel B
 # delimit ;
-	esttab using "$table/KLPS4_E+_pooled_outcomes_extended.tex",  append
+	esttab using "table/KLPS4_E+_pooled_outcomes_extended.tex",  append
 		cells ("b(star fmt(%12.0f) pattern(0 1 1 1 0 0 1)) b(star fmt(%12.2f) pattern(1 0 0 0 1 1 0))"
 				"se(par fmt(%12.0f) pattern(0 1 1 1 0 0 1)) se(par fmt(%12.2f) pattern(1 0 0 0 1 1 0))")
 		nocons nolz nolines star(* .10 ** .05 *** .01)
@@ -238,7 +238,7 @@ label variable saturation_dm "Saturation ($\lambda_3$)"
 
 *Exporting Panel C
 # delimit ;
-	esttab using "$table/KLPS4_E+_pooled_outcomes_extended.tex",  append
+	esttab using "table/KLPS4_E+_pooled_outcomes_extended.tex",  append
 		cells ("b(star fmt(%12.2f) pattern(1 1 1 1 0 0 0 0)) b(star fmt(%12.3f) pattern(0 0 0 0 1 1 1 1))"
 				"se(par fmt(%12.2f) pattern(1 1 1 1 0 0 0 0)) se(par fmt(%12.3f) pattern(0 0 0 0 1 1 1 1))")
 		nocons nolz nolines star(* .10 ** .05 *** .01)

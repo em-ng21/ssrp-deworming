@@ -154,7 +154,7 @@ label variable parents_education "Parents' Average Education"
 
 //Export Table
 # delimit ;
-	esttab using "$table/KLPS4_E+_pooled_earnings_consumption_parentsedu_long.tex",  append
+	esttab using "table/KLPS4_E+_pooled_earnings_consumption_parentsedu_long.tex",  append
 		cells ("b(star fmt(%12.0f))"
 				"se(par fmt(%12.0f))")
 		nocons nolz nolines star(* .10 ** .05 *** .01)

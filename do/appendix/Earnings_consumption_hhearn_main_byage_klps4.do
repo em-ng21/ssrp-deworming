@@ -367,7 +367,7 @@ foreach outcome in tot_cnsp_t{
 //Export table
 # delimit ;
 
-esttab using "$output/KLPS4_E+_earnings_consumption_main_byage_klps4.tex", append
+esttab using "output/KLPS4_E+_earnings_consumption_main_byage_klps4.tex", append
 	keep(treatment)
 	cells( 	"b( star fmt(%12.0f))"
 				"se( par fmt(%12.0f))")
@@ -581,7 +581,7 @@ foreach outcome in tot_earn12m_t {
 //Export table
 # delimit ;
 
-	esttab using "$output/KLPS4_E+_earnings_consumption_main_byage_klps4.tex", append
+	esttab using "output/KLPS4_E+_earnings_consumption_main_byage_klps4.tex", append
 		cells( 	"b( star fmt(%12.0f))"
 				"se( par fmt(%12.0f))")
 	nomtitles nocons nolz nolines nonumbers star(* .10 ** .05 *** .01)
@@ -748,7 +748,7 @@ foreach outcome in tot_hhearn12m_t  {
 
 # delimit ;
 
-	esttab using "$output/KLPS4_E+_earnings_consumption_main_byage_klps4.tex", append
+	esttab using "output/KLPS4_E+_earnings_consumption_main_byage_klps4.tex", append
 		cells( 	"b( star fmt(%12.0f) )"
 				"se( par fmt(%12.0f) )")
 	nomtitles nocons nolz nolines nonumbers star(* .10 ** .05 *** .01)

@@ -192,7 +192,7 @@ eststo pooled_obs
 
 //Output table
 # delimit ;
-esttab using "$output/KLPS4_E+_earnings_labor_occchoice_main_byage_klps4.tex", append 
+esttab using "output/KLPS4_E+_earnings_labor_occchoice_main_byage_klps4.tex", append 
 	order(log_earn wage_earn self_profit farm_profit nonzero hourly_earn wealth)
 	cells(b(star fmt(%12.0f) keep(wage_earn self_profit farm_profit wealth)) 
 	se(par fmt(%12.0f) keep(wage_earn self_profit farm_profit wealth)) 
@@ -370,7 +370,7 @@ eststo pooled_obs
 
 //Output table
 # delimit ;
-esttab using "$output/KLPS4_E+_earnings_labor_occchoice_main_byage_klps4.tex", append 
+esttab using "output/KLPS4_E+_earnings_labor_occchoice_main_byage_klps4.tex", append 
 	order(urban_res total_hrs agri_hrs nonagri_hrs af_emp swr_emp c_emp manufacturing_emp)
 	cells(b(star fmt(%12.2f) keep(total_hrs agri_hrs nonagri_hrs urban_res)) 
 	se(par fmt(%12.2f) keep(total_hrs agri_hrs nonagri_hrs urban_res))

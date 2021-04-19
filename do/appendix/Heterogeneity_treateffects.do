@@ -319,7 +319,7 @@ foreach column of local columns {
 **************************
 
 # delimit ;
-esttab using "$output/KLPS4_E+_heterogeneity_treateffects.tex", append 
+esttab using "output/KLPS4_E+_heterogeneity_treateffects.tex", append 
 	keep(years_treat mod_who_1999 z_who_1999 mod_who_2001 z_who_2001 health)
 	order(years_treat mod_who_1999 z_who_1999 mod_who_2001 z_who_2001 health)
 	cells(b(star fmt(%12.3f) keep(mod_who_1999 z_who_1999 mod_who_2001 z_who_2001)) 
@@ -347,7 +347,7 @@ texdoc close
 
 
 # delimit ;
-esttab using "$output/KLPS4_E+_heterogeneity_treateffects.tex", append
+esttab using "output/KLPS4_E+_heterogeneity_treateffects.tex", append
 	keep(educyr any_secondary social_network urban chores childcare work_hrs)
 	order(educyr any_secondary social_network urban chores childcare work_hrs)
 	cells(b(star fmt(%12.2f) keep(educyr any_secondary social_network urban))

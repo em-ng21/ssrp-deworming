@@ -208,7 +208,7 @@ foreach panel of local panels {
 		
 		//Output table
 		# delimit ;
-			esttab using "$output/KLPS4_E+_Attrition_main.tex", 
+			esttab using "output/KLPS4_E+_Attrition_main.tex", 
 			cells ("b(fmt(%12.3f) pattern(1 1 1 0 0 0)) b(star fmt(%12.3f) pattern(0 0 0 1 1 1))" 
 					"se(par fmt(%12.3f) pattern(0 0 0 0 0 0)) se(par fmt(%12.3f) pattern(0 0 0 1 1 1))" ) 
 				nomtitles nocons nolz nolines star(* .10 ** .05 *** .01)
