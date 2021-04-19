@@ -1,0 +1,24 @@
+------------------------------------------------------------------
+      name:  <unnamed>
+       log:  \\Client\H$\Documents\GitHub\ssrp-deworming/output/pe
+> rcent_urban_nairobi.log
+  log type:  text
+ opened on:  19 Apr 2021, 10:52:23
+
+.         
+.         use "$data/Worms20_Analysis.dta",clear
+
+.         keep if interview_round==4
+(9,674 observations deleted)
+
+.         summ nairobi if urban==1 [aw=weight] //36.3%
+
+    Variable |     Obs      Weight        Mean   Std. Dev.       M
+> in        Max
+-------------+----------------------------------------------------
+> -------------
+     nairobi |   2,310  9049.22239    .3628806   .4809349         
+>  0          1
+
+.         
+.         cap log close

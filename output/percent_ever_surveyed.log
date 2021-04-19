@@ -1,0 +1,40 @@
+------------------------------------------------------------------
+      name:  <unnamed>
+       log:  \\Client\H$\Documents\GitHub\ssrp-deworming/output/pe
+> rcent_ever_surveyed.log
+  log type:  text
+ opened on:  19 Apr 2021, 10:51:06
+
+.         
+.         use "$data/Worms20_Attrition.dta", clear
+
+.         gen surveyed_once = 1 if surveyed==1 | done_i_klps3 ==1 
+> | done_e_klps3==1
+(7,238 missing values generated)
+
+.         bys pupid: egen surveyed_max = max(surveyed_once)
+(3150 missing values generated)
+
+.         replace surveyed_max = 0 if surveyed_max==.
+(3,150 real changes made)
+
+.         keep pupid surveyed_max
+
+.         duplicates drop
+
+Duplicates in terms of all variables
+
+(15,054 observations deleted)
+
+.         tab surveyed_max //86%
+
+surveyed_ma |
+          x |      Freq.     Percent        Cum.
+------------+-----------------------------------
+          0 |      1,050       13.95       13.95
+          1 |      6,477       86.05      100.00
+------------+-----------------------------------
+      Total |      7,527      100.00
+
+.         
+.         cap log close

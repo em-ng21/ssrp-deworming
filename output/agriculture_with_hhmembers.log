@@ -1,0 +1,24 @@
+------------------------------------------------------------------
+      name:  <unnamed>
+       log:  \\Client\H$\Documents\GitHub\ssrp-deworming/output/ag
+> riculture_with_hhmembers.log
+  log type:  text
+ opened on:  19 Apr 2021, 10:51:22
+
+.         
+.         use "$data/Worms20_Analysis.dta",clear
+
+.         summ hhmember_work_ag if farm_work_12m!=0  [aw=weight] /
+> /70% of households (where the focus respondent worked in ag. in 
+> the last 12 months) have at least 1 other hh member working in t
+> his agricultural activity
+
+    Variable |     Obs      Weight        Mean   Std. Dev.       M
+> in        Max
+-------------+----------------------------------------------------
+> -------------
+hhmember_w~g |   2,172  7913.28502    .6998775   .4584166         
+>  0          1
+
+. 
+.         cap log close
